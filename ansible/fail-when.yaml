@@ -1,7 +1,7 @@
 ---
 - name: activity 2 - install php
   become: yes
-  hosts: webservers
+  hosts: all
   tasks:
     - name: fail on unsupported operating systems
       ansible.builtin.fail:
